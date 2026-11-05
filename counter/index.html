@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#092328" />
+    <meta name="description" content="A clean, responsive counter." />
+    <title>Clean Counter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="counter-card" aria-labelledby="counter-title">
+        <h1 id="counter-title">Counter</h1>
+
+        <output class="counter-value" id="counter-value" aria-live="polite" aria-atomic="true">0</output>
+
+        <div class="controls" aria-label="Counter controls">
+          <button class="control-button" id="increase-button" type="button">
+            <span class="button-symbol" aria-hidden="true">+</span>
+            <span>Increase</span>
+          </button>
+          <button class="control-button" id="increase-five-button" type="button">
+            <span class="button-symbol" aria-hidden="true"></span>
+            <span>Increase by 5</span>
+          </button>
+          <button class="control-button" id="decrease-button" type="button">
+            <span class="button-symbol" aria-hidden="true">−</span>
+            <span>Decrease</span>
+          </button>
+          <button class="control-button reset-button" id="reset-button" type="button">
+            <span class="button-symbol reset-symbol" aria-hidden="true">↺</span>
+            <span>Reset</span>
+          </button>
+        </div>
+
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#30183b">
+  <title>My Tasks — To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <main class="todo-card" aria-labelledby="page-title">
+    <header class="card-header">
+      <p class="eyebrow">Your day, in focus</p>
+      <h1 id="page-title">My Tasks</h1>
+      <p class="subtitle">A little progress adds up. Keep track of what matters.</p>
+    </header>
+
+    <form class="task-entry" action="#" method="get" aria-label="Add a task">
+      <label class="visually-hidden" for="new-task">Enter a new task</label>
+      <input class="task-input" id="new-task" name="task" type="text" placeholder="What needs to get done?" autocomplete="off">
+      <button class="add-button" id="add-task-button" type="submit">Add Task</button>
+    </form>
+
+    <section class="tasks-section" aria-labelledby="tasks-heading">
+      <div class="list-heading">
+        <h2 id="tasks-heading">Today</h2>
+        <span class="list-hint">Check off what you finish</span>
+      </div>
+
+      <ul class="task-list" id="task-list" aria-label="Task list">
+        <li class="task-row">
+          <input class="delete-control" id="delete-task-1" type="checkbox" aria-label="Remove task: Plan the week">
+          <div class="task-item">
+            <input class="task-checkbox" id="task-1-complete" type="checkbox" checked>
+            <label class="checkbox-visual" for="task-1-complete" aria-label="Mark Plan the week as incomplete"></label>
+            <label class="task-text" for="task-1-complete">Plan the week</label>
+            <label class="delete-button" for="delete-task-1" aria-label="Delete Plan the week" title="Delete task">×</label>
+          </div>
+        </li>
+        <li class="task-row">
+          <input class="delete-control" id="delete-task-2" type="checkbox" aria-label="Remove task: Reply to messages">
+          <div class="task-item">
+            <input class="task-checkbox" id="task-2-complete" type="checkbox">
+            <label class="checkbox-visual" for="task-2-complete" aria-label="Mark Reply to messages as complete"></label>
+            <label class="task-text" for="task-2-complete">Reply to messages</label>
+            <label class="delete-button" for="delete-task-2" aria-label="Delete Reply to messages" title="Delete task">×</label>
+          </div>
+        </li>
+        <li class="task-row">
+          <input class="delete-control" id="delete-task-3" type="checkbox" aria-label="Remove task: Take a short walk">
+          <div class="task-item">
+            <input class="task-checkbox" id="task-3-complete" type="checkbox">
+            <label class="checkbox-visual" for="task-3-complete" aria-label="Mark Take a short walk as complete"></label>
+            <label class="task-text" for="task-3-complete">Take a short walk</label>
+            <label class="delete-button" for="delete-task-3" aria-label="Delete Take a short walk" title="Delete task">×</label>
+          </div>
+        </li>
+      </ul>
+      <p class="empty-state" id="empty-state">No tasks yet. Add your first task!</p>
+    </section>
+
+    <footer class="card-footer">One task at a time. You’ve got this.</footer>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

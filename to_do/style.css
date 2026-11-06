@@ -1,20 +1,20 @@
-    :root {
-        color-scheme: dark;
-        --page: #241329;
-        --surface: #30183b;
-        --surface-raised: #3b2148;
-        --surface-hover: #4a2854;
-        --border: rgba(255, 194, 186, 0.14);
-        --text: #fff4f7;
-        --muted: #d8afc7;
-        --accent: #ff8da1;
-        --accent-strong: #ad56c4;
-        --accent-soft: #ffc2ba;
-        --accent-glow: #ff9ce9;
-        --danger: #ff9ce9;
-        --radius-card: 24px;
-        --radius-control: 13px;
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  :root {
+      color-scheme: dark;
+      --page: #241329;
+      --surface: #30183b;
+      --surface-raised: #3b2148;
+      --surface-hover: #4a2854;
+      --border: rgba(255, 194, 186, 0.14);
+      --text: #fff4f7;
+      --muted: #d8afc7;
+      --accent: #ff8da1;
+      --accent-strong: #ad56c4;
+      --accent-soft: #ffc2ba;
+      --accent-glow: #ff9ce9;
+      --danger: #ff9ce9;
+      --radius-card: 24px;
+      --radius-control: 13px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
     *,

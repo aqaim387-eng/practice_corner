@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#30183b">
   <title>My Tasks — To-Do List</title>
-    <link rel="stylesheet" href="style.css" />
-
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main class="todo-card" aria-labelledby="page-title">
@@ -29,39 +28,14 @@
       </div>
 
       <ul class="task-list" id="task-list" aria-label="Task list">
-        <li class="task-row">
-          <input class="delete-control" id="delete-task-1" type="checkbox" aria-label="Remove task: Plan the week">
-          <div class="task-item">
-            <input class="task-checkbox" id="task-1-complete" type="checkbox" checked>
-            <label class="checkbox-visual" for="task-1-complete" aria-label="Mark Plan the week as incomplete"></label>
-            <label class="task-text" for="task-1-complete">Plan the week</label>
-            <label class="delete-button" for="delete-task-1" aria-label="Delete Plan the week" title="Delete task">×</label>
-          </div>
-        </li>
-        <li class="task-row">
-          <input class="delete-control" id="delete-task-2" type="checkbox" aria-label="Remove task: Reply to messages">
-          <div class="task-item">
-            <input class="task-checkbox" id="task-2-complete" type="checkbox">
-            <label class="checkbox-visual" for="task-2-complete" aria-label="Mark Reply to messages as complete"></label>
-            <label class="task-text" for="task-2-complete">Reply to messages</label>
-            <label class="delete-button" for="delete-task-2" aria-label="Delete Reply to messages" title="Delete task">×</label>
-          </div>
-        </li>
-        <li class="task-row">
-          <input class="delete-control" id="delete-task-3" type="checkbox" aria-label="Remove task: Take a short walk">
-          <div class="task-item">
-            <input class="task-checkbox" id="task-3-complete" type="checkbox">
-            <label class="checkbox-visual" for="task-3-complete" aria-label="Mark Take a short walk as complete"></label>
-            <label class="task-text" for="task-3-complete">Take a short walk</label>
-            <label class="delete-button" for="delete-task-3" aria-label="Delete Take a short walk" title="Delete task">×</label>
-          </div>
-        </li>
       </ul>
+
       <p class="empty-state" id="empty-state">No tasks yet. Add your first task!</p>
     </section>
 
     <footer class="card-footer">One task at a time. You’ve got this.</footer>
   </main>
+
   <script src="./script.js"></script>
 </body>
 </html>
